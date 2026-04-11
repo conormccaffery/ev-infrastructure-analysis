@@ -173,11 +173,3 @@ San Francisco - Castro (94114): 2,662 registered EVs with zero existing public s
 San Francisco - West Portal (94127): 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
 
 Secondary strategic initiatives should include localized site assessments at these locations to evaluate physical parking lot capacity and electrical grid access prior to deployment.
-
-
-```{r dummy-map}
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%
-  addMarkers(lng = -122.0363, lat = 37.3688, popup = "Sunnyvale")
-```
