@@ -1,0 +1,657 @@
+@lat	@lon	addr:postcode	name	amenity
+37.7813758	-122.4215607	94102	Opera Plaza Cinema	cinema
+37.7844640	-122.4037068	94103	AMC Loews Metreon 16	cinema
+37.0072824	-121.5686958		The District Theater	cinema
+37.9018679	-122.3029319		Cerrito Theatre	cinema
+34.0464645	-118.4479940	90025	Nuart Theatre	cinema
+34.1090062	-118.1936572	90042	Highland Theatre	cinema
+38.2922663	-122.4564770	95476	Sebastiani Theatre	cinema
+37.2880242	-121.9339400	95008	Pruneyard Cinema	cinema
+36.9747866	-122.0265060	95060	Santa Cruz Cinema	cinema
+36.9725385	-122.0275924	95060	Nickelodeon	cinema
+36.9724617	-122.0254840	95060	Del Mar Theater	cinema
+37.2886024	-121.9899770		AMC Saratoga 14	cinema
+37.7850975	-122.4325871	94115	AMC Dine-In Kabuki 8	cinema
+34.0318961	-118.4952950		Aero Theatre	cinema
+32.8649226	-117.2320884		AMC Theatres La Jolla 12	cinema
+33.9780463	-118.3919080	90045	CINEMARK 18 & XD	cinema
+33.6884323	-117.8961397	92626	Edwards Metro Pointe Stadium 12	cinema
+37.0484407	-122.0271816		CineLux Scotts Valley Cinemas	cinema
+37.4861964	-122.2289372	94063	Redwood Downtown 20 and XD	cinema
+38.5424110	-121.7400910		Regal Holiday 6	cinema
+33.2448770	-117.2936300		Regal Cinemas	cinema
+34.1449720	-118.1433769	91101	Regal Paseo	cinema
+34.1460921	-118.1296780	91106	Regency Academy Cinemas	cinema
+34.1460311	-118.1364723	91101	Landmark Theaters Pasadena	cinema
+33.0462692	-117.2936965		La Paloma	cinema
+34.0627411	-118.4468559		Bruin Theater	cinema
+34.2810494	-119.2921787	93001	Century Theatres	cinema
+36.7156308	-121.6606910		Century 14 Northridge Mall	cinema
+34.8941644	-117.0034364		Barstow Station Cinema 6	cinema
+34.9134137	-116.9825636		Skyline Drive-In	cinema
+34.9135633	-116.9842052		Screen 1	cinema
+34.9149269	-116.9840110		Screen 2	cinema
+34.0962090	-118.1267188	91801	Regal Edwards Alhambra Renaissance	cinema
+38.6416237	-121.1914141		Folsom Century 14	cinema
+34.1827887	-118.8791255		Regency	cinema
+38.9622620	-119.9417431		Hard Rock Stadium Cinemas	cinema
+38.9555795	-119.9424512		Heavenly Village Cinemas	cinema
+35.6497767	-117.6717139	93555	Ridgecrest Cinema	cinema
+34.0360531	-118.6851121		Malibu Cinemas	cinema
+34.1043591	-118.2916172	90027	Los Feliz 3	cinema
+33.1040466	-117.2688323	92009	Cinepolis	cinema
+32.5345400	-116.9508717		Cinepolis	cinema
+32.5267886	-117.0181200		Cinepolis Plaza Rio	cinema
+35.6510801	-121.1856740		National Geographic Theater	cinema
+36.1042011	-115.1715226		United Artists Showcase Theater 8	cinema
+33.8107105	-117.9188509		Main Street Cinema House	cinema
+36.2280217	-119.3356624		Galaxy Theatres	cinema
+32.6578745	-115.4128020		Cinépolis Plaza San Pedro	cinema
+34.4430869	-119.8310740	93117	Fairview Theater	cinema
+34.2415660	-116.9116729	92315	Village Theaters North	cinema
+34.1676710	-118.1848714		LATimes Auditorium	cinema
+36.6004295	-121.8944610		Osio Cinemas	cinema
+37.6734778	-122.0813290		Century Theatres	cinema
+40.5635420	-122.2379796		Palo Cedro Video	cinema
+38.5423773	-121.4516451		Colonial	cinema
+37.9733212	-122.5287040	94901	Rafael Cinema	cinema
+36.8018197	-120.0175168			cinema
+34.9338047	-120.4198278		Edwards Santa Maria 10	cinema
+37.8733102	-122.4568538		Tiburon Playhouse	cinema
+32.7630766	-117.1078684		Landmark Ken Cinema	cinema
+37.7758105	-122.4979651	94121	Balboa Theatre	cinema
+33.7719409	-118.3724890		Regal Promenade 13	cinema
+32.6523657	-115.4730387		IMAX	cinema
+32.5082867	-116.9929106		Cinépolis Galerías	cinema
+39.2320749	-121.0356113			cinema
+33.7809580	-116.4630458		Mary Pickford Theatre	cinema
+34.6974754	-118.1433480	93534		cinema
+34.0501770	-118.2455381		Downtown Independent	cinema
+37.7647569	-122.4223630	94103	Roxie	cinema
+34.0166773	-118.4976310		AMC Santa Monica 7	cinema
+37.7822709	-122.4829270	94121	4 Star Theater	cinema
+37.8003762	-122.4385496		Marina Theatre	cinema
+37.6835894	-121.7672066	94550	Livermore 13 Cinemas	cinema
+38.2333435	-122.6381123	94952	Boulevard 14 Cinemas	cinema
+32.9522781	-117.2322489	92130	Cinepolis	cinema
+35.2797359	-120.6617950		Downtown Centre Cinemas	cinema
+37.8003210	-122.4419710		Presidio Theater	cinema
+34.0615961	-118.4465520	90024	Landmark Westwood	cinema
+40.7415696	-114.0431670	84083	Wendover Cinemas	cinema
+34.9505045	-120.4348980		Edwards Santa Maria Stadium 14 & RPX	cinema
+34.0432155	-118.2549860	90014	Niche.LA Video Art	cinema
+37.2903688	-121.8802916	95125	Cinelux Almaden Cinema	cinema
+37.2785950	-121.9509920	95008	Cinelux Plaza Theatre	cinema
+38.5992590	-121.4232289	95815	United Artist Arden Fair 6	cinema
+37.7333812	-120.9509986	95367	Galaxy Theater	cinema
+36.9716990	-121.9669254		CineLux 41st Avenue Cinemas	cinema
+37.9806382	-121.3108001		Janet Leigh Theatre	cinema
+38.6597179	-121.7652855		Cinemark Movie 5	cinema
+35.1306936	-118.4479267		Hitching Post	cinema
+35.6256690	-120.6885330	93446	Park Cinemas	cinema
+32.5657872	-116.6353417		Cinepolis	cinema
+32.5308745	-117.0267426		Cinemex	cinema
+33.9772337	-118.4165870	90096	Cinemark Playa Vista	cinema
+32.8799093	-117.2371159		Price Center Theater	cinema
+34.0626647	-118.4472810	90024	Fox Theater	cinema
+33.3490423	-118.3257130	90704	Avalon Theatre	cinema
+33.9770648	-117.3377446		Regency Theater- University Village	cinema
+34.1531279	-118.6458805		Edwards	cinema
+40.1663373	-122.2268254	96080	Prime Cinemas	cinema
+38.5785457	-121.4904060	95814	Esquire IMAX Theatre	cinema
+37.8712267	-122.2662610		Pacific Film Archive Theater	cinema
+32.5299864	-117.0233358		Sala Monsivais	cinema
+34.0760913	-118.4402650	90095	James Bridges Theater	cinema
+34.0974926	-118.3626600	90046	DGA Theater Complex	cinema
+34.0138867	-118.4925513	90401	Arclight Santa Monica	cinema
+33.9011945	-118.3839560		MBS Screening Room	cinema
+39.1707122	-120.1423793	96145	Tahoe Art Haus & Cinema	cinema
+36.1140278	-115.1954287		Brenden Theater	cinema
+37.8107541	-122.4103727		7D Experience	cinema
+33.7648589	-118.1934751	90804	Cinemark	cinema
+34.1497255	-118.3392690		Screening Rooms 4 & 5	cinema
+34.4146038	-118.4629250	91351	Edwards Canyon Country Stadium 10	cinema
+34.0820100	-118.3616499	90036	The Cinefamily	cinema
+32.6259356	-116.9661900		AMC Otay Ranch 12	cinema
+34.1836616	-118.3121443	91502	AMC Burbank Town Center 8	cinema
+34.0148476	-118.4948686	90401	AMC Broadway 4	cinema
+33.7750708	-117.8702364		Picture Show at Main Place Mall	cinema
+32.7706681	-117.1588080		Ultrastar Cinemas Mission Valley	cinema
+35.4873484	-120.6652450	93422	Galaxy Colony Square 10 Theatres	cinema
+37.6409508	-121.0011528	95354	Brenden Modesto 18	cinema
+34.0453888	-118.4527820	90025	Laemmle's Royal	cinema
+34.0668674	-118.3890126	90211	Laemmle Music Hall	cinema
+34.0972967	-118.3648736	90046	Landmark Theatres Sunset	cinema
+34.0154147	-118.4979493	90401	Laemmle Monica Film Center	cinema
+32.5010609	-116.9203634		Cinépolis Monarca	cinema
+40.7324887	-122.9405819		Trinity Theatre	cinema
+34.0182922	-118.1538883	90022	Regency Commerce 14	cinema
+34.0674731	-118.1335830	91754	AMC Atlantic Times Square 14	cinema
+33.9050443	-118.0843215	90650	Regency Norwalk 8	cinema
+33.8597102	-117.9962921	90621	CGV Buena Park	cinema
+34.1277832	-117.8920642	91702	Regency Foothill Center 10	cinema
+34.0599018	-118.4193321	90067	Dreamscape Immersive	cinema
+33.4921441	-117.6980225		Cinépolis	cinema
+34.0023949	-118.0906687		Cinepolis	cinema
+32.5313995	-116.9500396		Cinemex	cinema
+34.1662175	-118.3750709	91601	Laemmle NoHo 7	cinema
+34.1485511	-118.2540142	91206	Laemmle Glendale	cinema
+34.0976467	-118.3313287	90028	Arena Cinelounge Hollywood	cinema
+33.8598963	-117.2072568			cinema
+33.8596315	-117.2072456			cinema
+34.1546356	-118.4671290	91403	ArcLight	cinema
+32.6575961	-115.4124930		Cinépolis VIP Plaza San Pedro	cinema
+32.6513340	-115.4097369		Cinemex	cinema
+34.1475397	-118.2537678		Five Star Cinema	cinema
+32.6849582	-117.1292731		Navy Base San Diego Theater	cinema
+33.8058754	-117.9123866		AMC Anaheim GardenWalk 6	cinema
+34.4185872	-118.5617010		Regal Edwards Valencia Stadium 12 & IMAX	cinema
+33.5612019	-117.6713150	92691	Regal Edwards Kaleidoscope	cinema
+36.1427417	-115.1738308		Regal Cinebarre Palace Station	cinema
+34.0481306	-118.2588130	90017	Alamo Drafthouse Cinema	cinema
+39.2756307	-120.1214419		The Village Cinemas	cinema
+33.8445123	-118.2613715		Cinemark Carson and XD	cinema
+36.1026913	-115.2018440	89103	Century Orleans 18 and XD	cinema
+37.5542096	-121.9795010	94538	Ciné Lounge	cinema
+34.4211273	-119.7008903	93101	SBIFF Film Center	cinema
+34.1599841	-118.5076958		Laemmle Town Center 5	cinema
+34.4194088	-119.6998576	93101	Metropolitan Paseo Nuevo 4 Cinemas	cinema
+36.0210663	-115.0893080		Regal Green Valley Ranch Stadium 10	cinema
+36.1233751	-115.1345024	89169	"Galaxy Theatres Luxury+ Las Vegas, Boulevard Mall"	cinema
+35.1619834	-114.5763965		Laughlin Stadium 9 Cinemas	cinema
+33.6428766	-117.9186963		Triangle Square Cinemas	cinema
+33.2966036	-117.2210542	92003	River Village Cinema is D'Place	cinema
+35.1678515	-114.5720149	89029	Riverside Cinema 6-PLEX	cinema
+34.0630911	-118.3100484	90005	CGV Cinemas LA	cinema
+34.0590688	-118.4413750	90024	IPIC Theaters	cinema
+38.6086398	-121.3804620	95825	Country Club Cinema	cinema
+39.5235032	-119.7782829		Grand Sierra Cinema	cinema
+34.1848094	-118.3153197	91502	AMC Burbank Town Center 6	cinema
+37.6386781	-118.9642627		Minaret Cinemas	cinema
+37.7629355	-121.9598080	94583	THE LOT City Center	cinema
+35.6149201	-115.3842440	89019	Carolee Theatre	cinema
+34.4346378	-119.7459718	93105	The Hitchcock Cinema & Public House	cinema
+33.0827412	-117.2340919	92009	Cinepolis	cinema
+36.3265132	-119.6445102		Metro 4 Cinema	cinema
+39.2488515	-119.9522526	89451	Incline Village Cinema	cinema
+37.3738568	-122.0308230	94086	AMC DINE-IN Sunnyvale 12	cinema
+34.0166022	-118.4046220		Jimmy Stewart Theater	cinema
+34.0195998	-118.4004423		Backstage Theatre	cinema
+34.0184432	-118.4010970		Lancaster Theatre	cinema
+34.0183646	-118.4010360		Quinn Theatre	cinema
+34.0184225	-118.4013620		Holden Theatre	cinema
+34.0186874	-118.4015830		Novak Theatre	cinema
+34.0240303	-118.3920048		Cecil B. DeMille Theater	cinema
+34.0633306	-118.3605719		Ted Mann Theater	cinema
+37.4261135	-121.9104841	95035	Serra Theaters	cinema
+36.6049668	-121.8925961		The New Warf Theatre	cinema
+34.3815449	-118.5292120	91321	Laemmle (Newhall location)	cinema
+32.5317590	-117.0396101	22000	Gran Cinema Latino	cinema
+37.7849617	-122.4209490	94109	Apple Cinemas Van Ness	cinema
+37.8789017	-122.2463958		Lawrence Hall of Science 3D Theater	cinema
+34.1931099	-118.6254357		AMC Fallbrook 7	cinema
+34.3995712	-119.5189193	93013	Alcazar Theater	cinema
+37.7899308	-122.3929075		The Cut Outdoor Cinema	cinema
+37.8188952	-122.1808200		Tien MegaDome Theater	cinema
+33.6163240	-117.8764451	92660	The LOT	cinema
+34.0193653	-118.3986283		Thalberg Theaters	cinema
+37.7292826	-122.4765953	94132	Regal Stonestown Galleria	cinema
+35.3354507	-119.0367760	93304	Valley Plaza Stadium	cinema
+32.5344874	-116.9278418		Salas Audiovisual	cinema
+32.5141938	-116.9658302		Cinemex	cinema
+33.2002680	-117.2443384		Cinepolis	cinema
+32.5162266	-117.0151270		Cinemex	cinema
+33.9463476	-118.3430746	90303	Cinépolis Luxury Cinemas Inglewood IMAX	cinema
+34.0594595	-118.4440120		Billy Wilder Theater	cinema
+34.1022383	-118.3404881		TCL Chinese 6 Theatre	cinema
+38.5796950	-122.5794357		The Moonshine	cinema
+38.5704541	-121.4839211		Dreamland Cinema	cinema
+37.4048970	-122.1097747		Alamo Drafthouse Cinema	cinema
+38.5615231	-121.4933284		Tower Cinema	cinema
+34.4296030	-119.8729130	93117	Camino Real Cinemas	cinema
+37.3253150	-121.9475738	95050	Alamo Drafthouse Cinema Valley Fair	cinema
+34.1465685	-118.1515106	91103	IPIC Theaters	cinema
+33.8307637	-118.0868601		Edwards Long Beach Stadium 26 & IMAX	cinema
+33.8518218	-118.1359240		Starlight Cinemas	cinema
+37.1135533	-121.6376078	95037	CineLux Tennant Station Stadium 11	cinema
+36.9977800	-121.5660507	95020	CineLux Theatres Gilroy	cinema
+37.3323628	-121.8858618	95113	3 Below Theaters and Lounge	cinema
+36.8497392	-121.3963910		Premiere Cinemas	cinema
+37.9818601	-122.3198144		Century Hilltop 16	cinema
+37.3892796	-121.9828775		AMC Mercado 20	cinema
+37.9761961	-122.0362477	94520	Brenden Theatres	cinema
+32.9813513	-117.0819121	92128	Angelika Film Center & Cafe	cinema
+32.5788455	-117.0367684	92154	AMC Palm Promenade 24	cinema
+32.8423882	-117.2740397	92037	The Lot	cinema
+32.9152173	-117.1176107	92126	Edwards Mira Mesa Stadium 18 & IMAX	cinema
+32.5300896	-117.0238672		Cine OMNIMAX	cinema
+38.5466674	-121.7393973	95616	Davis Stadium 5	cinema
+32.7390945	-117.2154666	92106	The Lot	cinema
+34.4389933	-119.7070506	93103	SBIFF Riviera Theatre	cinema
+36.9165030	-121.7860939		Green Valley Cinema 8	cinema
+34.2065443	-118.2169934		UA La Canada 8	cinema
+37.7960425	-122.2773783		Regal Cinemas 9 Jack London Square	cinema
+39.5028353	-119.7978753	89502	Century Parklane 16	cinema
+39.4031948	-119.7480805	89511	Century Theatres	cinema
+34.0756077	-117.5488623		Regal Ontario Palace Stadium 22 & IMAX	cinema
+34.0745556	-117.5525833		AMC DINE-IN Ontario Mills 30	cinema
+34.2171021	-119.0632599	93010	Regal Edwards Camarillo Palace	cinema
+33.5765491	-117.7270185	92656	Edwards Aliso Viejo Stadium 20 & IMAX	cinema
+38.5430770	-121.7403269	95616	Varsity Theatre	cinema
+35.2818693	-120.6605258	93401	Fremont Theatre	cinema
+34.0582730	-117.1853062	92373	LOOK Dine-in Cinema	cinema
+33.8225623	-117.5158625		Edwards Stadium 18 Theatre	cinema
+38.7568348	-121.2564306		United Artists Olympus Pointe 12	cinema
+37.7028610	-121.8855487	94568	Regal Hacienda Crossings	cinema
+34.4242931	-119.7068670	93101	Arlington Theatre	cinema
+33.5250304	-117.1521033		Edwards Temecula Stadium 15 & IMAX	cinema
+32.7786105	-117.0109007	91942	Reading Cinema	cinema
+38.1396815	-122.2346464			cinema
+38.1311163	-122.2187567	94591	Century 14 Vallejo	cinema
+35.3775561	-119.0215878	93301	Majestic Fox Theater	cinema
+35.3423642	-119.1039263		Edwards Cinema	cinema
+35.3692623	-119.0483099	93309	AMC Bakersfield 6	cinema
+35.3850439	-119.1120531		Studio Movie Grill	cinema
+36.6053324	-119.3960605			cinema
+36.8493518	-119.7874841		Regal Cinemas	cinema
+36.7820015	-119.7862623			cinema
+36.7820015	-119.7862623	93726	Regal Cinemas	cinema
+36.7580093	-119.8015223	93728	Tower Theatre	cinema
+36.7573791	-119.7992923			cinema
+36.7351688	-119.7928105			cinema
+36.7292569	-119.7930877			cinema
+33.6534381	-117.2956372	92530	Diamond Cinemas 8	cinema
+40.9337562	-124.1040402	95519	Mill Creek Cinema	cinema
+33.2001842	-117.2441385	92083	Cinépolis Vista	cinema
+33.1784940	-117.3290342	92008	Regal Cinemas Carlsbad 12	cinema
+34.1497940	-118.3386520		Steven J. Ross Theater	cinema
+38.7971545	-121.2939001		Blue Oaks Century Theatres	cinema
+37.8115565	-122.2473442		Grand Lake Theatre	cinema
+37.8273368	-122.2507969		Piedmont Theatre	cinema
+33.1214971	-117.0871305	92025	Regal Escondido Stadium 16	cinema
+37.7023116	-122.4702839	94014	Century 20 Daly City	cinema
+33.9946779	-117.9263459		AMC Puente Hills 20	cinema
+34.1097575	-117.5717207		Terra Vista 6 Cinemas	cinema
+36.3264764	-119.6444682		Metro 4 Cinema	cinema
+33.5636802	-117.2022492		Reading Cinemas	cinema
+33.9758086	-117.5515717		Edwards Stadium 14 Theatres	cinema
+38.0949906	-122.5566739		Century Theaters Rowland Plaza	cinema
+38.3531580	-121.9846016	95688		cinema
+37.8566644	-122.2533063		Elmwood Theatre	cinema
+32.7373928	-116.9393871	92019	Regal Edwards Rancho San Diego	cinema
+33.9189470	-117.8997965	92821	Brea Edwards Cinema	cinema
+35.2588082	-120.6723609		Sunset Drive-in	cinema
+37.9866478	-122.5876036		Fairfax 5 Theaters	cinema
+37.6994028	-122.1232427		Century Theatres	cinema
+33.7328395	-117.9932114	92647	Century Huntington Beach and XD	cinema
+33.8080132	-117.9181302		Mickey’s PhilharMagic	cinema
+33.8114219	-117.9172928		Magic Eye Theater	cinema
+34.2394934	-119.1753282		Century RiverPark 16	cinema
+34.0115427	-118.3374067	90008	Cinemark Baldwin Hills Crenshaw and XD	cinema
+33.8743574	-117.9239842	92832	Fox Theatre	cinema
+37.9737128	-120.3663269		Regal Sonora Stadium 10	cinema
+39.4409272	-123.8048483		Coast Cinemas	cinema
+37.8964560	-122.0618652		Century 16 Theater	cinema
+37.4449619	-122.1637110		Aquarius Theatre	cinema
+37.4453599	-122.1628822	94301	Stanford Theater	cinema
+33.6518049	-117.7449034	92618	Regal Edwards Irvine Spectrum	cinema
+38.7500597	-121.2480431	95661	Former Century Roseville	cinema
+33.9559777	-117.3900513		Regal Riverside Plaza	cinema
+33.5035030	-117.1516841		UltraStar Cinemas	cinema
+33.6965766	-117.8290934	92782	AMC	cinema
+34.1170749	-117.8363043		AMC Glendora 12	cinema
+37.8139543	-122.2674782	94612	New Parkway Theater	cinema
+37.4146530	-122.0808655	94043	Century 16	cinema
+32.5311502	-117.1134052		Cinepolis	cinema
+36.5838183	-121.8938541		Cinemark Monterey 13	cinema
+36.2027535	-115.2433930	89108	AMC Rainbow Promenade 10	cinema
+33.8339674	-118.3477333		AMC Del Amo 18	cinema
+33.7825918	-117.8933866	92868-3130	AMC Orange 30	cinema
+38.6483325	-121.1202008	95630	Palladio 16 Cinemas	cinema
+38.6490112	-121.1214602	95630	Palladio LUXE Cinema	cinema
+35.3693886	-119.0135571	93304	Maya Cinemas Bakersfield 16	cinema
+37.4181723	-121.8991416		Century 20 Great Mall and XD	cinema
+35.1183234	-120.5933978	93420	Fair Oaks Theatre	cinema
+35.1270812	-120.5966538	93420	Regal Cinemas	cinema
+35.3656473	-120.8480922	93442	Bay Theatre	cinema
+36.8065345	-119.8526528	93711	Regal UA Broadway Faire	cinema
+33.7899909	-117.9628450	92841	Regal Garden Grove	cinema
+33.5196170	-117.1599013		Temeku Cinemas	cinema
+37.7561989	-122.4192116	94110	Alamo Drafthouse Cinema	cinema
+33.7595984	-118.0106384		Regency Theatres	cinema
+36.9717396	-120.0692419		Madera Drive-In Cinema 2	cinema
+36.7384037	-119.7945977		Warnors Theatre	cinema
+32.7046812	-114.6023247		Harkins Theatres Yuma Palms 14	cinema
+33.7229456	-117.7906350	92602	Regal Edwards Market Place	cinema
+33.8093663	-117.8703495	92867	Century Stadium 25 and XD	cinema
+32.6131190	-115.3865880		Cinépolis Nuevo Mexicali	cinema
+32.6450358	-115.4730116		Cinépolis Centro Cívico	cinema
+33.8435808	-117.9893517	90620	Krikorian Buena Park Metroplex 18	cinema
+36.1395058	-120.3608676			cinema
+33.8650449	-117.7518372		Edwards Cinema	cinema
+37.7397106	-122.4663828	94127	CinéArts at the Empire	cinema
+36.6764663	-121.6548307	93901	Maya Cinemas	cinema
+37.9447129	-122.0623978		Century 16 Downtown Pleasant Hill	cinema
+37.2238957	-121.9836492	95030	Los Gatos Theatre	cinema
+37.9552438	-121.2898053	95202	Stockton Regal Cinemas	cinema
+34.6080485	-118.1559545		Cinemark at Antelope Valley Mall	cinema
+33.9113745	-117.4361559	92503	Van Buren Drive-in Theater	cinema
+37.4998049	-121.9710415	94538	Century Theatres	cinema
+34.9026192	-120.4259408	93455	Hi-Way Drive In	cinema
+38.0089209	-121.8443914	94565	Maya Cinema	cinema
+36.6202628	-121.9165019		Lighthouse Cinema	cinema
+33.8712990	-118.0588249	90703	Edwards Cerritos Stadium 10	cinema
+34.0340216	-118.0927575		AMC Montebello 10	cinema
+37.5662968	-122.3222598	94401	Cinemark 12 Downtown San Mateo	cinema
+34.1127395	-117.5301716		AMC Victoria Gardens	cinema
+40.5976361	-124.1538154	95540	Fortuna Theatre	cinema
+33.7561688	-118.1075230	90803	United Artists Long Beach 6	cinema
+34.1819195	-118.3120039	91502	AMC Burbank 16	cinema
+36.1120543	-115.0613285		Century 18 Sam's Town	cinema
+37.4204974	-122.1415525		CineArts Palo Alto Square	cinema
+38.0000860	-122.0497840		West Wind Solano Drive In	cinema
+32.7249508	-114.6176617	85364	Regency Main Street Cinemas	cinema
+33.7924727	-118.3285061	90505	AMC Rolling Hills 20	cinema
+37.7884236	-122.4467224	94115	Vogue Theatre	cinema
+34.5689466	-114.3683171	86404	Star Cinemas Lake Havasu	cinema
+33.8200069	-116.5211883		Camelot Theatres	cinema
+38.6771670	-121.7773899	95695	State Theatre	cinema
+32.6567431	-114.5887911	85364	Sunset Cinema	cinema
+33.9366775	-117.2654768		Moreno Valley Towngate 8	cinema
+38.0121489	-121.2937099		Regal Stockton Holiday Cinema	cinema
+33.9128312	-117.4575811		AMC 16 Galleria at Tyler	cinema
+37.3958410	-121.9734866			cinema
+36.8045378	-114.0908910	89027	Mesquite Stadium 6	cinema
+37.0657272	-120.8361354		Los Banos Cinemas	cinema
+37.3015558	-120.4819262	95340	Mainplace Cinema	cinema
+36.1014832	-115.1027189	89121	Tropicana Cinemas	cinema
+34.1870565	-118.4127643		Cinemark North Hollywood	cinema
+38.2965238	-122.2874903	94559	The Uptown Theatre Napa	cinema
+37.9940401	-122.1186080	94553	Contra Costa Stadium Cinema	cinema
+37.7808214	-121.2272393	95337	AMC Manteca 16	cinema
+34.1983185	-119.1791995	93030	Plaza Stadium Cinemas 14	cinema
+38.6520943	-121.0621491	95762	Regal El Dorado Hills Stadium 14 & IMAX	cinema
+38.5792695	-121.4933620		Crest Theatre	cinema
+35.2608004	-116.6866702			cinema
+33.9147509	-117.3302037		Mission Grove Theaters	cinema
+34.1528237	-118.4476088		Pacific Theatres Sherman Oaks 5	cinema
+38.9133532	-121.0790467	95603	Regal Cinemas Auburn 10	cinema
+34.1818038	-118.8856690		AMC Thousand Oaks 14	cinema
+37.8786099	-122.1821413	94563	Orinda Theatre	cinema
+36.7384701	-119.7956659		Wilson Theatre	cinema
+33.7595674	-118.1140933		AMC tickets	cinema
+33.7593491	-118.1142959	90803	AMC Marina Pacifica 12	cinema
+37.5155254	-122.2852271		NDNU Theatre	cinema
+33.7457934	-116.7131713	92549	The Rustic Theatre	cinema
+33.7983011	-116.4607147		Movies 10	cinema
+33.1349453	-117.1928668		Edwards San Marcos Stadium 18	cinema
+34.0736222	-117.2061064		Harkins Theatres	cinema
+34.0153459	-118.2858504		California Science Center IMAC	cinema
+38.5127605	-122.7805603	95403	Airport Stadium 12	cinema
+34.0652962	-118.3779090	90211	Ahrya Fine Arts Cinema	cinema
+34.0231065	-118.3940665		The Culver Theater	cinema
+33.7720014	-118.1669933		Art Theatre	cinema
+41.4835151	-120.5428562	96101	The Niles Theater	cinema
+34.0984669	-118.2869442	90027	The Vista Theatre	cinema
+34.0841257	-118.3169132		Paramount Theater	cinema
+34.1007914	-118.3366539	90028	Egyptian Theater	cinema
+34.0764283	-118.3457497	90036	New Beverly Cinema	cinema
+33.5010610	-117.6633785	92675	Regency Theatres	cinema
+34.1011636	-118.3398135	90028	El Capitan Theatre	cinema
+34.1020273	-118.3409561	90028	TCL Chinese Theatre	cinema
+33.9035101	-118.3889966	90245	CinemaWest Beach Cities	cinema
+34.0521577	-118.4147892		William Fox Theater 23	cinema
+34.0531338	-118.4153035		Darryl F. Zanuck Theater 226	cinema
+34.0782245	-118.2628478	90026	Echo Park Film Center	cinema
+34.0521088	-118.4152919		Little Theater 2	cinema
+34.1088459	-118.1935561	90042	Highland Theatre	cinema
+34.0457405	-118.2680630	90015	Regal L.A. Live	cinema
+33.5559916	-117.6851774	92677	Regency Theatres Director's Cut Cinema	cinema
+34.1860782	-118.3992767			cinema
+34.1919958	-118.6257498		AMC Fallbrook 7	cinema
+34.2159491	-118.4453984		Van Nuys Plant 16	cinema
+34.1888174	-118.6039868		AMC Dine-In Cinema Topanga 12	cinema
+33.6411742	-117.5952118	92688	Cinepolis Luxury Cinemas	cinema
+38.4392742	-121.4215535	95823	United Artists Laguna Village 12	cinema
+32.5159398	-117.0080677		Cinemex	cinema
+33.8959885	-118.3261165	90249	Gardena Cinema	cinema
+33.9422543	-118.1333500		Studio Movie Grill Downey	cinema
+33.9030051	-118.1631299	90723	BIANCHI  Stadium 11	cinema
+33.9803784	-118.2247682	90255	Park Theatres	cinema
+33.9442042	-118.2037607		Allen Theater	cinema
+33.9135771	-118.0711845	90650	AMC Norwalk 20	cinema
+33.9518489	-118.1616327	90280	Regal Edwards South Gate & IMAX	cinema
+34.2324625	-116.0590259		Sunset Cinema	cinema
+33.8614406	-118.0948249	90703	Harkins Cerritos 16	cinema
+38.9632637	-122.6300844		Clearlake Stadium Cinema	cinema
+34.4673991	-117.2502798	92308	Cinemark Jess Ranch 12	cinema
+36.1474191	-115.3006594	89117	Regal Village Square Stadium 18	cinema
+39.1451531	-123.2074220	95482	Ukiah Regal 6	cinema
+39.1313159	-119.7735208		Galaxy Fandango	cinema
+40.5890203	-122.3470614		Cinemark Movies 14	cinema
+34.2565754	-118.4989700		Regency Theaters	cinema
+32.5657578	-116.6353861			cinema
+33.7866442	-118.0295100	92845	Starlight Cinemas West Grove	cinema
+34.0953745	-117.7202807	91711	Laemmle's Claremont 5	cinema
+34.0701303	-117.9234477	91790	Edwards West Covina Stadium 18	cinema
+34.1050647	-117.9053402		AMC Covina 17	cinema
+33.9778201	-118.0370307		Whittier Village Cinemas	cinema
+34.7026305	-118.1780558	93536	Cinemark iMax	cinema
+34.6963082	-118.1709967	93534	Cinemark	cinema
+39.7790686	-121.5911652	95969	Paradise Cinema 7	cinema
+39.7603091	-121.8466258		Cinemark Chico 14 and XD	cinema
+34.4270990	-117.3192534		Civic Plaza	cinema
+37.9472833	-122.5121032		Cinemark Century Larkspur	cinema
+39.5365407	-119.7587255	89431	Galaxy Theatres Victorian	cinema
+34.1369696	-118.3525503	91608	AMC Universal CityWalk 19	cinema
+33.7089529	-116.2926408	92253	Century Theatres La Quinta	cinema
+34.4705266	-117.1766279		AMC Classic Apple Valley 14	cinema
+33.1950237	-117.3797554		Regal Cinemas 16	cinema
+39.5250088	-119.8147542	89501	Century Riverside 12	cinema
+37.8603488	-122.1268138	94556	Rheem Theatre	cinema
+39.0000602	-120.1015547		Campfire Center	cinema
+39.5397971	-119.7774060	89431	West Wind El Rancho Drive-In 4	cinema
+36.2379901	-115.1201499		Galaxy Cannery	cinema
+32.7351629	-117.1537231		4D Theater	cinema
+34.2402082	-118.5574184	91324	AMC	cinema
+34.0067233	-117.4231679	92509	Rubidoux Drive In Theatre & Swap Meet	cinema
+32.9546015	-117.0396590	92064	AMC Poway 10	cinema
+37.6949431	-122.0831073		Chabot Cinemas	cinema
+38.4385401	-122.7131205		Roxy 14	cinema
+38.5667785	-121.3393293	95827	West Wind Sacramento 6 Drive-In	cinema
+39.5317164	-119.7229142		Galaxy Sparks IMAX Luxury+ Theatre	cinema
+33.9188114	-117.9605211	90631	Regal La Habra Stadium 16	cinema
+34.2848833	-118.7723017		Studio Movie Grill	cinema
+36.0722389	-115.0763100	89014	Galaxy Green Valley Luxury+ Theatre	cinema
+34.2845796	-118.7193110		Regal Simi Valley Civic Center & IMAX	cinema
+36.8127822	-119.7345518	93710	Maya Cinemas	cinema
+32.6254671	-115.4431292		Cinépolis Centenario	cinema
+36.1492810	-115.3320321		Regal Summerlin Luxury	cinema
+38.5931099	-121.4182266		Century Theatres	cinema
+37.4942007	-120.8753315	95380	Regal Turlock	cinema
+37.9706584	-122.0587403	94520	Veranda LUXE Cinema & IMAX	cinema
+34.2598114	-119.2298437		Regency Buenaventura 6	cinema
+33.9209350	-118.1316639		Cinemark Downey 14 and XD	cinema
+37.3624865	-118.3956596	93514	Bishop Twin Theater	cinema
+32.6964161	-115.5014103	92231	Calexico 10 Theatre	cinema
+34.4475212	-119.2461463		Ojai Playhouse	cinema
+36.0781218	-119.0364587		Galaxy 9 Theatres	cinema
+38.4182118	-121.4042337			cinema
+36.8073366	-119.6922783		Sierra Vista Cinema 16	cinema
+34.1074573	-117.2949746	92401	Regal San Bernardino Stadium 14 & RPX	cinema
+37.9063513	-122.5468581	94941	Sequoia Cinema	cinema
+32.6382750	-117.0190394	91910	Regal Rancho Del Rey	cinema
+34.1828542	-118.8793433		Regal Cinema Janss Marketplace	cinema
+38.2500306	-122.7949402		TRACEN Movie Theater	cinema
+40.4354879	-122.2870310		Valley 11 Cinemas	cinema
+41.3099978	-122.3151318	96067	Mount Shasta Cinema	cinema
+32.7381270	-117.1527981		Kid's Theater	cinema
+40.8700292	-124.0867669			cinema
+40.8698650	-124.0850241		Arcata Theater Lounge	cinema
+37.3320763	-119.6556040		Met Cinema	cinema
+33.8139465	-117.5097010	92883	Starlight  Dos Lagos 15	cinema
+34.9137201	-116.9834286		Skyline Drive-In	cinema
+40.7954025	-124.1745333	95501	Broadway Cinema	cinema
+38.4039215	-122.8228010	95472	Rialto Cinemas Sebastopol	cinema
+34.1341112	-117.4003153		Cinemark	cinema
+38.4653201	-121.4942321	95832	Regal Delta Shores 17	cinema
+37.5992677	-122.0676303	94587	Century 25	cinema
+40.8329555	-115.7600406	89801	Crystal 5	cinema
+32.7390630	-117.2154047	92106	The Lot	cinema
+32.7675873	-117.1483079	92108	AMC Mission Valley 20	cinema
+36.2044365	-115.1957321		West Wind Las Vegas Drive-In Theater	cinema
+38.5818165	-121.5011866		Century DOCO and XD	cinema
+33.9873981	-118.4410247		AMC Dine-in Marina 6	cinema
+34.4690333	-114.3413118	86403	Movies Havasu 10	cinema
+32.8209813	-115.5710442		Movies 10	cinema
+34.4762832	-117.3391035	92395	Cinemark Movies 10	cinema
+35.2410227	-114.0398768		Cinemark Movies 4	cinema
+34.6568568	-120.4605574		The Movies 4	cinema
+34.0350979	-117.6845417	91710	Cinemark Movies 8	cinema
+36.3249077	-119.6695555		Cinemark Movies 8	cinema
+38.6346542	-121.5028596	95834	Regal Natomas Marketplace Stadium 16	cinema
+33.5995583	-117.8725425	92625	New Port Theatre	cinema
+33.9761136	-117.4592571		Jurupa 14 Cinemas	cinema
+36.0608261	-115.0421733		Regal Sunset Station & IMAX	cinema
+39.4909428	-121.5746216	95965	Feather River Cinema	cinema
+33.7243790	-116.3944000		Palm Desert 10	cinema
+34.1199677	-116.4337703	92284	Cineplex	cinema
+35.7080101	-118.4534444	93285	Reel Cinema	cinema
+40.4184046	-120.6595645	96130	Sierra Theater	cinema
+38.5050018	-122.4692969	94574	Cameo Cinema	cinema
+39.4121607	-123.3539019	95490	Noyo Theater	cinema
+32.6535767	-117.0654192		AMC Plaza Bonita 14	cinema
+34.1580826	-118.8228529		Cinépolis Luxury Cinemas	cinema
+33.9251716	-116.8773855		Fox Cineplex Theatres	cinema
+39.1837557	-119.7665483		Carson Stadium Cinemas	cinema
+38.9092782	-123.6927681	95468	Arena Theater	cinema
+34.0128278	-117.7387360		Harkins Theatres	cinema
+36.3029730	-119.7830996		Lemoore Stadium Cinemas	cinema
+37.9457972	-121.7407933	94513	AMC Brentwood 14	cinema
+38.6800807	-121.3356549	95841	Century 16 Greenback Lane and XD	cinema
+35.0146884	-114.6410747		Brenden Avi	cinema
+36.1691585	-115.2922928	89145	Century 16 Suncoast	cinema
+39.1293351	-121.6357464	95993	Cinemark Yuba City 12	cinema
+36.1618194	-115.1488937	89101	Eclipse Theaters	cinema
+40.8351998	-115.7945271	89801	Elko Cinema 6	cinema
+39.4771447	-118.7702336	89406	Fox Peak Cinema	cinema
+36.2010832	-115.1262938	89030	Maya Cinemas North Las Vegas	cinema
+35.7500005	-119.2522984	93215	Maya Cinemas Delano 12	cinema
+34.0863850	-117.6710923	91762	Regal Edwards Ontario Mountain Village	cinema
+36.2485473	-115.2452935		Century 16 Santa Fe Station and XD	cinema
+33.7997460	-116.3926783	92270	Ranch Mirage and IMAX	cinema
+34.2164926	-119.0039284	93012	Roxy 11	cinema
+36.3297126	-119.2886531	93279	Regal Visalia	cinema
+38.1357943	-121.2742665	95240	Lodi Stadium 12	cinema
+34.6143355	-120.1884745	93427	Parks Plaza Cinema	cinema
+39.0153696	-122.9089320	95453	Lakeport Cinema 5	cinema
+34.0484028	-118.5251993		Cinépolis Luxury Cinemas	cinema
+34.1674366	-114.2673255		Blue Water Cinemas	cinema
+38.8053559	-123.0160169	95425	Clover Theater	cinema
+34.4184073	-119.6970672	19103	Metropolitan Metro 4 Theatre	cinema
+34.0537470	-117.9889831		Vineland Drive-in	cinema
+33.7715932	-116.9547285		San Jacinto Metro 12	cinema
+36.0246513	-114.9671180		Cinemark Cinedome 12	cinema
+37.6958986	-120.9959205		Regal Modesto Stadium 10	cinema
+38.8007369	-121.2094233		Studio Movie Grill Rocklin	cinema
+41.7554686	-124.1923447		Crescent City Cinemas	cinema
+33.7086132	-116.2365019		Regal Indio Metro	cinema
+38.7318026	-120.8350162		Regal Placerville Stadium 8	cinema
+33.8970336	-118.0055335		AMC La Mirada 7	cinema
+34.3465021	-119.0815477		Santa Paula 7	cinema
+38.0691906	-120.5403909		Angels 5 Theatre	cinema
+36.5389257	-119.3893587	93618	Platinum Theatres Dinuba	cinema
+36.5728103	-119.6247459		Selma 6 Cinemas	cinema
+34.1379058	-117.2428470	92404	Regency Sterling 6	cinema
+33.7564785	-118.3117598	90732	Terrace Cinemas	cinema
+33.6500933	-117.8385729		Regal Edwards University Town Center	cinema
+36.2388164	-119.7659175		Coyote Entertainment Center - Palace Cinemas	cinema
+32.6885104	-117.1788686		Village Theater	cinema
+35.1414854	-119.4597232		Fox Theatre	cinema
+36.1345109	-115.0840871	89121	Regal Boulder Station 11	cinema
+32.5777499	-117.0868191	92154	South Bay Drive-In Theatre & Swap Meet	cinema
+38.3424129	-120.7654148		Regal Cinemas Jackson Cinema 4	cinema
+36.1547335	-115.3349450	89135	Regal Red Rock 4DX & IMAX	cinema
+36.3005062	-119.3163819	93277	Regal Cinemas	cinema
+32.7672925	-117.1665287		AMC Fashion Valley 18	cinema
+39.4740476	-118.7767135	89406	Fallon Theatre	cinema
+38.2605125	-122.0562615	94533	Regal Edwards Fairfield & IMAX	cinema
+34.1475373	-118.0003249	91016	SMG Monrovia	cinema
+33.8718110	-118.3558112		AMC South Bay Galleria 16	cinema
+39.0161685	-122.9080258	95453	Lakeport Auto Movies	cinema
+32.7617666	-115.5292867	92243	Cinemark Imperial Valley Mall 14	cinema
+37.2515417	-121.8624073	95123	Cinemark Century Oakridge 20 XD and ScreenX	cinema
+32.8052827	-116.9674838	92020	Regal Parkway Plaza 18	cinema
+34.1431335	-118.2570711	91210	AMC Americana at Brand 18	cinema
+36.0682263	-115.1785996		AMC Town Square 18	cinema
+34.1354254	-118.0486729	91007	AMC Santa Anita 16	cinema
+33.9397132	-117.2722480		Harkins Moreno Valley 16	cinema
+34.4743547	-117.3481791	92392	Cinemark 16 Victorville	cinema
+36.0104538	-115.1750626		Century South Point 16	cinema
+37.8328990	-122.2920557		AMC Bay Street 16	cinema
+36.2927085	-115.1780173		Regal Aliante	cinema
+37.3236177	-121.8141925	95122	AMC Eastridge 15	cinema
+34.0574170	-118.4186017	90067	AMC Century City 15	cinema
+37.9320160	-121.6947842	94513	CineLux New Delta Cinema	cinema
+40.4193525	-120.6635082	96130	Uptown Cinemas	cinema
+33.6771847	-117.8000771		AMC Classic Woodbridge 5	cinema
+34.0683390	-117.4387858	92335	Regency Fontana 8	cinema
+37.6379847	-122.4178710		Century at Tanforan and XD	cinema
+37.5272415	-122.0014216		AMC Newpark 12	cinema
+37.6517450	-122.1006648		Century Southland Mall	cinema
+40.3102822	-121.2294569		Mt. Lassen Theatre	cinema
+32.8482106	-116.9594228	92071	Santee Drive-In	cinema
+32.6298069	-117.0851193	91910	AMC Chula Vista 10	cinema
+39.2510329	-114.8832594	89315	Central Theatre	cinema
+34.1692124	-116.0567634	92277	Smith's Ranch Drive-In	cinema
+37.6802784	-121.7747992	94550	Vine Cinema & Alehouse	cinema
+36.9759291	-120.0766723	93637	Movies Madera	cinema
+34.2197170	-119.0538461	93010	Paseo Camarillo Cinemas	cinema
+38.2828772	-122.2799782	94558	Century Napa Valley Movie Theater	cinema
+33.7707374	-117.8683520		Showcase Theater	cinema
+32.7321570	-117.1471236		Charmaine and Maurice Kaplan Theater	cinema
+37.3316426	-121.8901886		The Tech Interactive IMAX	cinema
+37.5396189	-122.3011691		Cinépolis Luxury Cinemas San Mateo	cinema
+37.7860566	-122.4005380		Phyllis Wattis Theater	cinema
+32.7097226	-117.1669530			cinema
+33.8908355	-117.8116947	92886	Regal Yorba Linda & IMAX	cinema
+36.8301596	-119.9079224	93722	Regal Cinemas	cinema
+39.1166597	-121.3894677			cinema
+36.1634109	-115.1426282	89101		cinema
+37.9370060	-122.5352123		Lark Theater	cinema
+33.7437677	-118.1027064		Bay Theater	cinema
+37.2808668	-121.8399663	95136	West Wind Capitol 6 Drive-In	cinema
+34.0191730	-118.4003857		Cary Grant Theatre	cinema
+39.2172327	-121.0628744	95945	Del Oro Theater	cinema
+33.6124893	-117.8734731	92660	Regal Cinemas	cinema
+33.6127442	-117.8735210	92660	Edwards Big Newport 6	cinema
+37.7087832	-122.1329128	94578	BAL Theater	cinema
+37.7607287	-121.4589481		Cinemark Movies 14	cinema
+34.4255127	-119.8268104			cinema
+34.0954687	-118.3284417		Netflix Tudum Theater	cinema
+32.5143704	-117.0123595		Cinépolis Paseo Chapultepec	cinema
+40.8821295	-121.6701627		Mt. Burney Theatre	cinema
+37.3188075	-121.9484466	95128	CineArts @ Santana Row	cinema
+40.9682290	-117.7419484	89445	Park Cinemas	cinema
+32.8887057	-117.1271020		Bob Hope Theater	cinema
+33.9221900	-116.9543387		2nd Street Cinema	cinema
+39.7288297	-121.8350865	95928	Pageant Theater	cinema
+38.9630070	-119.7810173		Ironwood Stadium Cinema 8	cinema
+32.7000000	-117.1895342		Lowry Theater	cinema
+34.0715530	-118.3583969		AMC The Grove 14	cinema
+33.9000198	-118.1622842		Paramount Drive-in Theaters	cinema
+37.9300246	-114.4510404		Gem Theater	cinema
+34.0867886	-117.6914632	91763	AMC Dine-in Montclair Place 12	cinema
+37.7619998	-122.4347480	94114	Castro Theatre	cinema
+34.1381228	-118.3544409		DreamWorks Theatre	cinema
+36.2139335	-121.1262388	93930	King City Cinemas	cinema
+34.1494403	-118.8192626	91361	Westlake	cinema
+39.9369844	-120.9472430		Town Hall Theater	cinema
+32.6210226	-115.5079669		Cinépolis Galerías del Valle	cinema
+37.7648131	-122.2434326	94501	Alameda Theatre & Cineplex	cinema
+33.7400934	-116.4096843	92270	Century Theatres at The River	cinema
+34.1129374	-117.7684715	91750	Edwards Theater	cinema
+36.6646100	-121.8127655		Century Theaters-Marina	cinema
+32.6742453	-117.1581901		Q-zone Movie Theater	cinema
+33.8618535	-117.9205239	92832	AMC Dine-In Fullerton 20	cinema
+33.8226100	-116.5398858	92262	Festival Theaters	cinema
