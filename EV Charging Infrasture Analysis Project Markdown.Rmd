@@ -1,0 +1,175 @@
+---
+title: "Optimizing EV Charging Infrastructure at California Cinemas"
+author: "Conor McCaffery"
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Introduction
+The objective of this analysis is to identify highly profitable, localized monopolies for Level 2 Electric Vehicle (EV) charging investments in the California market. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public infrastructure has struggled to keep pace in dense areas.
+
+Commercial movie theaters present a uniquely lucrative opportunity to bridge this gap. Because theaters guarantee a captive audience with a 2-to-3 hour dwell time, they perfectly align with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
+
+
+## Methodology & Data Validation
+Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as one of my local cinemas in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-value, high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
+
+
+
+## Executive Summary
+The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies localized monopolies where early infrastructure investors can capture high-value, captive audiences.
+
+
+
+
+```{r data-pipeline, results='hide'}
+library(dplyr)
+
+#Dataset 1: Alternative Fueling Stations Data 
+ca_ev_data <- read.csv("C:\\Users\\conor\\Downloads\\Datasets\\alt_fuel_stations_ca.csv")
+head(ca_ev_data)
+colnames(ca_ev_data)
+
+
+#cols_to_keep <- c("City","State","EV.Network","ZIP","EV.Pricing","Funding.Sources")
+ca_df <- select(ca_ev_data,City,State,EV.Network,ZIP,EV.Pricing,Funding.Sources)
+ca_df <- rename(ca_df,zip_code = ZIP)
+```
+```{r}
+#Dataset 2: 2025 EV Registrations by Zip Code
+ev_zip_data <- read.csv("C:\\Users\\conor\\Downloads\\Datasets\\vehicle-fuel-type-counts-2024.csv")
+ev_zip_data <- select(ev_zip_data,-Date)
+clean_ev_data <- subset(ev_zip_data, Fuel == 'Battery Electric' | Fuel == 'Plug-in Hybrid')
+clean_ev_data <- rename(clean_ev_data,zip_code=ZIP.Code)
+```
+```{r}
+# Dataset 3: Points of Interest
+# Preparing to do a join on zip code
+ca_cinemas <- read.delim("C:\\Users\\conor\\Downloads\\Datasets\\california_cinemas.csv",sep = "\t")
+ca_cinemas <- ca_cinemas %>% rename(lat=1,long=2,zip_code=3)
+ca_cinemas <- ca_cinemas %>% select(lat,long,zip_code,name) #dropping the amenity column
+
+ca_cinemas <- ca_cinemas %>% mutate(zip_code = ifelse(grepl("Mercado",name, ignore.case = TRUE), "95054", zip_code ))
+```
+
+```{r}
+# Database Architecture and SQL Execution
+library(DBI)
+library(RSQLite)
+# Creating a temporary SQLite database 
+con <- dbConnect(RSQLite::SQLite(), "ev_market_database.sqlite")
+
+# Putting the three clean datasets into SQL database as tables
+dbWriteTable(con, "chargers", ca_df,overwrite = TRUE)
+dbWriteTable(con, "EVs", clean_ev_data, overwrite = TRUE)
+dbWriteTable(con, "cinemas", ca_cinemas, overwrite = TRUE)
+
+# Reading external SQL file in my PC
+sql_query <- readLines("ev_market_aggregation.sql")
+sql_query <- paste(sql_query, collapse = "\n")
+
+ranked_opportunities <- dbGetQuery(con, sql_query)
+dbDisconnect(con)
+```
+
+```{r}
+head(ranked_opportunities)
+```
+
+```
+The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
+1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local monopoly,
+2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood
+3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
+```{r}
+head(ranked_opportunities,15)
+```
+## Analyze
+After the master data table is created, the purpose of this phase is to search for zip codes with addressable markets. I do this by calculating an opportunity score that represents the ratio of electric vehicles to charging stations. The zip codes with the highest opportunity scores show the most promising locations to invest in. For example, the highest opportunity score is 3130. This means there is 3130 vehicles competing over every charging station in that zip code. It also means the cinema in that area is looking to capture that market potential.I noticed that the first three areas in the opportunity score rankings have no electric vehicle charging stations near a cinema. Any company that can build a charging station at these locations can capitalize on market potential. In addition, there are some areas with a high volume of EV chargers. For example, the zip code 92677 corresponds to 14 charging stations. It is likely that the area is overwhelmed, and a cinema can benefit from charging infrastructure.
+
+As expected, after creating a map, we can visually confirm that the Bay Area has the highest potential opportunity score. There are 295 observations in the map, and 4 of them are above the lower score bracket.
+I cannot find a data point for one of my local cinemas in Santa Clara. This indicates a flaw in the data. I corrected it by performing a data imputation step to manually add a zip code. After looking at the map, I was surprised to see that the Los Angeles area is not included in the high end of the range. This is despite Los Angeles having one of the highest concentrations of electric vehicles in the United States. 
+
+I eventually decided to make a duplicate of my Rstudio script so I can implement a SQL file into the project. 
+
+
+##Strategic Mapping
+
+```{r mapping, out.width='100%', echo=TRUE}
+library(leaflet)
+library(RColorBrewer)
+
+cinema_map_data <- ca_cinemas %>% 
+  filter(!is.na(lat) & !is.na(long) & zip_code != "") %>%
+  left_join(ranked_opportunities, by = "zip_code")
+  
+cinema_map_data <- cinema_map_data %>% filter(lat >= 32.5 & lat <= 42.0, 
+                                              long >= -124.5 & long <= -114.0)
+# California Coordinates are positioned approximately between these values above.
+
+# A source for the mapping error before cleaning comes from dataset 2 which tracks vehicle registrations, it might be common for people with California registrations to move to nearby states.
+any(!startsWith(cinema_map_data$zip_code,"9"))
+#California zip codes always start with 9
+cinema_map_data <- cinema_map_data %>% filter(substr(zip_code,start = 1, stop = 1) == "9")
+
+opportunity_score_palette <- colorNumeric(
+  palette = "YlGn",
+  domain = cinema_map_data$opportunity_score)
+
+ev_strategy_map <- leaflet(data = cinema_map_data) %>% 
+  # Map Layer 1
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  # Map Layer 2
+  addCircleMarkers(
+    lng = ~long,
+    lat = ~lat,
+    fillColor = ~opportunity_score_palette(opportunity_score),
+    color = "black",
+    radius = 8,
+    fillOpacity = 0.8,
+    stroke = FALSE,
+    
+    # Map Layer 3
+    popup = ~paste(
+      "<b>Theater:</b>", name, "<br>",
+      "<b>Zip Code:</b>", zip_code, "<br>",
+      "<b>Total EVs:</b>", total_evs, "<br>",
+      "<b>Existing Chargers:</b>", total_chargers, "<br>",
+      "<b>Opportunity Score:</b>", round(opportunity_score, 0)
+    )
+  ) %>%
+  # Map Layer 4
+  addLegend(
+    position = "bottomright",
+    pal = opportunity_score_palette,
+    values = ~opportunity_score,
+    title = "EV Opportunity Score",
+    opacity = 1
+  )
+```
+
+```{r}
+ev_strategy_map
+```
+## Key Findings
+The Opportunity Score metric was engineered to measure market demand against available supply, calculated as Total EVs / (Existing Chargers + 1). The spatial mapping reveals that while EV adoption is heavily concentrated, infrastructure is severely lagging in specific pockets.
+
+While the majority of California cinemas yield a baseline opportunity score of approximately 500, the algorithm identified extreme outliers concentrated heavily in the Bay Area (San Francisco and the East Bay). These locations represent pure, zero-competition monopolies for the theaters located within them.
+
+## Strategic Recommendations
+The top three highest-scoring zip codes should be prioritized for immediate site surveys and property management partnership outreach:
+
+Orinda, East Bay (94563): The highest-value target in the state. There are 3,130 registered EVs sharing zero public charging stations. The local cinema holds a pure monopoly on EV-driving customers.
+
+San Francisco - Castro (94114): 2,662 registered EVs with zero existing public stations in a dense, parking-constrained urban environment.
+
+San Francisco - West Portal (94127): 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
+
+Secondary strategic initiatives should include localized site assessments at these locations to evaluate physical parking lot capacity and electrical grid access prior to deployment.
