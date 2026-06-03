@@ -1,6 +1,9 @@
 # EV Charging Infrastructure Optimization: California Cinemas
 
 **Tech Stack:** R, SQLite, SQL (CTEs, Joins, Aggregations), Leaflet (Spatial Mapping)
+**Live Dashboard:** [Click here to view the interactive EV Charging Infrastructure Mapping](https://conormccaffery.github.io/ev-infrastructure-analysis/)
+![Interactive Map Preview](map_preview.png)
+
 
 ## Project Overview
 This project identifies highly profitable, underserved markets for Level 2 Electric Vehicle (EV) charging station deployment. By analyzing EV registration density against existing public charging infrastructure, the objective is to locate "localized monopolies"—specifically targeting commercial movie theaters, which offer the ideal 2-to-3 hour customer dwell time required for Level 2 charging.
