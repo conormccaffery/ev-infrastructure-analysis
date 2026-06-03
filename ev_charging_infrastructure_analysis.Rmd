@@ -86,7 +86,6 @@ dbDisconnect(con)
 head(ranked_opportunities)
 ```
 
-```
 The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
 1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local monopoly,
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood
