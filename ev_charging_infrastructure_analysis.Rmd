@@ -36,7 +36,7 @@ The spatial aggregation of DMV vehicle registrations and alternative fueling dat
 library(dplyr)
 
 #Dataset 1: Alternative Fueling Stations Data 
-ca_ev_data <- read.csv("datasets/alt_fuel_stations_ca.csv")
+ca_ev_data <- read.csv("alt_fuel_stations_ca.csv")
 head(ca_ev_data)
 colnames(ca_ev_data)
 
@@ -47,7 +47,7 @@ ca_df <- rename(ca_df,zip_code = ZIP)
 ```
 ```{r}
 #Dataset 2: 2025 EV Registrations by Zip Code
-ev_zip_data <- read.csv("datasets/vehicle-fuel-type-counts-2024.csv")
+ev_zip_data <- read.csv("vehicle-fuel-type-counts-2024.csv")
 ev_zip_data <- select(ev_zip_data,-Date)
 clean_ev_data <- subset(ev_zip_data, Fuel == 'Battery Electric' | Fuel == 'Plug-in Hybrid')
 clean_ev_data <- rename(clean_ev_data,zip_code=ZIP.Code)
@@ -55,7 +55,7 @@ clean_ev_data <- rename(clean_ev_data,zip_code=ZIP.Code)
 ```{r}
 # Dataset 3: Points of Interest
 # Preparing to do a join on zip code
-ca_cinemas <- read.delim("datasets/california_cinemas.csv",sep = "\t")
+ca_cinemas <- read.delim("california_cinemas.csv",sep = "\t")
 ca_cinemas <- ca_cinemas %>% rename(lat=1,long=2,zip_code=3)
 ca_cinemas <- ca_cinemas %>% select(lat,long,zip_code,name) #dropping the amenity column
 
