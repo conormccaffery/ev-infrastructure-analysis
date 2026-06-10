@@ -22,7 +22,7 @@ Commercial movie theaters present a uniquely lucrative opportunity to bridge thi
 
 
 ## Methodology & Data Validation
-Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as one of my local cinemas in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-value, high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
+Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as a major local cinema in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-value, high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
 
 
 
@@ -86,6 +86,7 @@ dbDisconnect(con)
 head(ranked_opportunities)
 ```
 
+
 The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
 1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local monopoly,
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood
@@ -94,15 +95,11 @@ The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers +
 head(ranked_opportunities,15)
 ```
 ## Analyze
-After the master data table is created, the purpose of this phase is to search for zip codes with addressable markets. I do this by calculating an opportunity score that represents the ratio of electric vehicles to charging stations. The zip codes with the highest opportunity scores show the most promising locations to invest in. For example, the highest opportunity score is 3130. This means there is 3130 vehicles competing over every charging station in that zip code. It also means the cinema in that area is looking to capture that market potential.I noticed that the first three areas in the opportunity score rankings have no electric vehicle charging stations near a cinema. Any company that can build a charging station at these locations can capitalize on market potential. In addition, there are some areas with a high volume of EV chargers. For example, the zip code 92677 corresponds to 14 charging stations. It is likely that the area is overwhelmed, and a cinema can benefit from charging infrastructure.
-
-As expected, after creating a map, we can visually confirm that the Bay Area has the highest potential opportunity score. There are 295 observations in the map, and 4 of them are above the lower score bracket.
-I cannot find a data point for one of my local cinemas in Santa Clara. This indicates a flaw in the data. I corrected it by performing a data imputation step to manually add a zip code. After looking at the map, I was surprised to see that the Los Angeles area is not included in the high end of the range. This is despite Los Angeles having one of the highest concentrations of electric vehicles in the United States. 
-
-I eventually decided to make a duplicate of my Rstudio script so I can implement a SQL file into the project. 
+The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677 with 14 existing public chargers, appear to be well-served relative to local EV demand, while others, particularly in the Bay Area, show severe shortfalls.
+Notably, despite Los Angeles County having one of the highest total EV registration counts in the state, no LA zip codes appear among the top opportunity scores. This suggests charger deployment in LA has scaled roughly in line with demand, making the Bay Area's zero-competition zip codes a comparatively higher-priority target for new infrastructure investment.
 
 
-##Strategic Mapping
+## Strategic Mapping
 
 ```{r mapping, out.width='100%', echo=TRUE}
 library(leaflet)
@@ -175,3 +172,6 @@ San Francisco - Castro (94114): 2,662 registered EVs with zero existing public s
 San Francisco - West Portal (94127): 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
 
 Secondary strategic initiatives should include localized site assessments at these locations to evaluate physical parking lot capacity and electrical grid access prior to deployment.
+
+## Limitations and Future Work
+While the Opportunity Score effectively highlights zip-code-level disparities between EV adoption and charging infrastructure, several factors were outside the scope of this analysis. The score treats all chargers within a zip code as equally competitive regardless of their distance from a given cinema; a future iteration could use the existing latitude/longitude data to calculate a precise distance-to-nearest-charger for each theater. Additionally, charger counts do not distinguish between charging speeds or reflect real-time utilization, and cinema-level attendance data was unavailable, meaning all locations are currently weighted equally regardless of foot traffic.
