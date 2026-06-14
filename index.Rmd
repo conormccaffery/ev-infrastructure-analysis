@@ -15,11 +15,9 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 ## Introduction
 
-**Live Dashboard:** [Click here to view the interactive EV Charging Infrastructure Mapping]
+The objective of this analysis is to identify underserved, high-opportunity markets for Level 2 Electric Vehicle (EV) charging investment in California. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public charging infrastructure has struggled to keep pace in dense areas.
 
-The objective of this analysis is to identify potentially attractive, localized monopolies for Level 2 Electric Vehicle (EV) charging investments in the California market. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public infrastructure has struggled to keep pace in dense areas.
-
-Commercial movie theaters present a uniquely lucrative opportunity to bridge this gap. Because theaters guarantee a captive audience with a 2-to-3 hour dwell time, they perfectly align with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
+Commercial movie theaters present a strong opportunity to bridge this gap. Because theaters guarantee a captive audience with a 2-to-3 hour dwell time, they align well with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
 
 
 ## Methodology & Data Validation
@@ -28,7 +26,7 @@ Information for the California cinema dataset was sourced from Overpass Turbo. B
 
 
 ## Executive Summary
-The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies localized monopolies where early infrastructure investors can capture high-value, captive audiences.
+The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies underserved, high-opportunity markets where early infrastructure investment could reach a high-value, captive audience.
 
 
 
@@ -89,15 +87,15 @@ head(ranked_opportunities)
 
 
 The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
-1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local undeserved, high-opportunity market.
+1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations — the highest-opportunity, lowest-infrastructure market in the dataset.
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood.
 3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
 ```{r}
 head(ranked_opportunities,15)
 ```
 ## Analyze
-The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677 with 14 existing public chargers, appear to be well-served relative to local EV demand, while others, particularly in the Bay Area, show severe shortfalls.
-Notably, despite Los Angeles County having one of the highest total EV registration counts in the state, no LA zip codes appear among the top opportunity scores. This suggests charger deployment in LA has scaled roughly in line with demand, making the Bay Area's zero-competition zip codes a comparatively higher-priority target for new infrastructure investment.
+The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677 with 14 existing public chargers, appear to be well-served relative to local EV demand, while others, particularly in the , show severe shortfalls.
+Notably, despite Los Angeles County having one of the highest total EV registration counts in the state, no LA zip codes appear among the top opportunity scores. This suggests charger deployment in LA has scaled roughly in line with demand, making the Bay Area's low-infrastructure zip codes a comparatively higher-priority target for new infrastructure investment.
 
 
 ## Strategic Mapping
@@ -161,12 +159,12 @@ ev_strategy_map
 ## Key Findings
 The Opportunity Score metric was engineered to measure market demand against available supply, calculated as Total EVs / (Existing Chargers + 1). The spatial mapping reveals that while EV adoption is heavily concentrated, infrastructure is severely lagging in specific pockets.
 
-While the majority of California cinemas yield a baseline opportunity score of approximately 500, the algorithm identified extreme outliers concentrated heavily in the Bay Area (San Francisco and the East Bay). These locations represent pure, zero-competition monopolies for the theaters located within them.
+While the majority of California cinemas yield a baseline opportunity score of approximately 500, the algorithm identified extreme outliers concentrated heavily in the Bay Area (San Francisco and the East Bay). These locations represent the most underserved, high-opportunity markets for the theaters located within them.
 
 ## Strategic Recommendations
 The top three highest-scoring zip codes should be prioritized for immediate site surveys and property management partnership outreach:
 
-Orinda, East Bay (94563): The highest-value target in the state. There are 3,130 registered EVs sharing zero public charging stations. The local cinema holds a pure monopoly on EV-driving customers.
+Orinda, East Bay (94563): The highest-value target in the state. There are 3,130 registered EVs sharing zero public charging stations, meaning the local cinema would face no competing public charging nearby.
 
 San Francisco - Castro (94114): 2,662 registered EVs with zero existing public stations in a dense, parking-constrained urban environment.
 
