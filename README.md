@@ -28,5 +28,5 @@ The spatial aggregation revealed several high-value "zero-competition" zones:
 
 ## How to Run This Project
 1. Clone this repository to your local machine.
-2. Ensure you have the `dplyr`, `DBI`, `RSQLite`, and `leaflet` packages installed in R.
-3. Run the `ev_market_analysis.R` script. The script will automatically connect to the local SQLite database, execute the SQL query, and generate the interactive Leaflet map in your viewer.
+2. Ensure you have R and RStudio installed, along with the `dplyr`, `DBI`, `RSQLite`, `leaflet`, and 'RColorBrewer' packages installed in R.
+3. Open `index.Rmd` in RStudio and click "Knit". This will execute the embedded R code, connect to the local SQLite database, run the SQL aggregation query, and regenerate the interactive Leaflet map and report as `index.html`.
