@@ -6,7 +6,7 @@
 
 
 ## Project Overview
-This project identifies highly profitable, underserved markets for Level 2 Electric Vehicle (EV) charging station deployment. By analyzing EV registration density against existing public charging infrastructure, the objective is to locate "localized monopolies"—specifically targeting commercial movie theaters, which offer the ideal 2-to-3 hour customer dwell time required for Level 2 charging.
+This project identifies potentially attractive, underserved markets for Level 2 Electric Vehicle (EV) charging station deployment. By analyzing EV registration density against existing public charging infrastructure, the objective is to locate "localized monopolies"—specifically targeting commercial movie theaters, which offer the ideal 2-to-3 hour customer dwell time required for Level 2 charging.
 
 ## Data Architecture & ETL Pipeline
 Rather than relying solely on in-memory dataframe manipulations, this project simulates an enterprise workflow utilizing a local **Extract, Transform, Load (ETL)** pipeline:
@@ -22,7 +22,7 @@ The core metric used to rank zip codes is the **Opportunity Score**, calculated 
 
 ## Key Findings: Top 3 Target Markets
 The spatial aggregation revealed several high-value "zero-competition" zones:
-* **Orinda (94563):** 3,130 registered EVs sharing 0 public charging stations. A pure local monopoly.
+* **Orinda (94563):** 3,130 registered EVs sharing 0 public charging stations. A pure local undeserved, high-opportunity market.
 * **San Francisco - Castro (94114):** 2,662 registered EVs with 0 existing public stations in a dense, parking-constrained neighborhood.
 * **San Francisco - West Portal (94127):** 1,981 EVs with 0 chargers, representing a massive suburban-urban foothold.
 
