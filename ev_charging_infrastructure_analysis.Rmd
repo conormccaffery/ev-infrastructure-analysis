@@ -6,7 +6,6 @@ output:
     theme: flatly
     toc: true
     toc_float: true
-    code_folding: "hide"
 ---
 
 ```{r setup, include=FALSE}
@@ -15,9 +14,9 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 ## Introduction
 
-**Live Dashboard:** [Click here to view the interactive EV Charging Infrastructure Mapping]
+**Live Dashboard:** [Click here to view the interactive EV Charging Infrastructure Mapping](https://conormccaffery.github.io/ev-infrastructure-analysis/)
 
-The objective of this analysis is to identify potentially attractive, localized monopolies for Level 2 Electric Vehicle (EV) charging investments in the California market. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public infrastructure has struggled to keep pace in dense areas.
+The objective of this analysis is to identify highly profitable, localized monopolies for Level 2 Electric Vehicle (EV) charging investments in the California market. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public infrastructure has struggled to keep pace in dense areas.
 
 Commercial movie theaters present a uniquely lucrative opportunity to bridge this gap. Because theaters guarantee a captive audience with a 2-to-3 hour dwell time, they perfectly align with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
 
@@ -47,7 +46,7 @@ ca_df <- select(ca_ev_data,City,State,EV.Network,ZIP,EV.Pricing,Funding.Sources)
 ca_df <- rename(ca_df,zip_code = ZIP)
 ```
 ```{r}
-#Dataset 2: 2024 EV Registrations by Zip Code
+#Dataset 2: 2025 EV Registrations by Zip Code
 ev_zip_data <- read.csv("vehicle-fuel-type-counts-2024.csv")
 ev_zip_data <- select(ev_zip_data,-Date)
 clean_ev_data <- subset(ev_zip_data, Fuel == 'Battery Electric' | Fuel == 'Plug-in Hybrid')
@@ -89,8 +88,8 @@ head(ranked_opportunities)
 
 
 The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
-1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local undeserved, high-opportunity market.
-2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood.
+1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations. A pure local monopoly,
+2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood
 3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
 ```{r}
 head(ranked_opportunities,15)
