@@ -6840,12 +6840,12 @@ California Cinemas</h1>
 <p><strong>Live Dashboard:</strong> [Click here to view the interactive
 EV Charging Infrastructure Mapping]</p>
 <p>The objective of this analysis is to identify potentially attractive,
-localized monopolies for Level 2 Electric Vehicle (EV) charging
+underserved local markets for Level 2 Electric Vehicle (EV) charging
 investments in the California market. While EV adoption continues to
 scale rapidly—making up over 20% of new global car sales—public
 infrastructure has struggled to keep pace in dense areas.</p>
-<p>Commercial movie theaters present a uniquely lucrative opportunity to
-bridge this gap. Because theaters guarantee a captive audience with a
+<p>Commercial movie theaters present a potentially attractive opportunity to
+bridge this gap. Because theaters guarantee a high-dwell-time customer base with a
 2-to-3 hour dwell time, they perfectly align with the charging duration
 required for Level 2 EV stations. This project utilizes an ETL (Extract,
 Transform, Load) pipeline to aggregate three primary data sources by zip
@@ -6871,8 +6871,8 @@ local <strong>SQLite data warehouse</strong></p>
 fueling data reveals a stark infrastructure gap in California. While EV
 adoption is highly concentrated in specific zip codes, commercial
 entertainment venues—specifically cinemas, which offer the ideal 2-to-3
-hour customer dwell time for Level 2 charging—are vastly underserved.
-This analysis identifies localized monopolies where early infrastructure
+The average customer dwell time for Level 2 charging is vastly underserved.
+This analysis identifies underserved local markets where early infrastructure
 investors can capture high-value, captive audiences.</p>
 <pre class="r"><code>library(dplyr)
 
@@ -6930,8 +6930,7 @@ stations. A pure local undeserved, high-opportunity market. 2.
 <strong>San Francisco - Castro (94114):</strong> 2,662 registered EVs
 with zero existing public stations in a dense, parking-constrained
 neighborhood. 3. <strong>San Francisco - West Portal (94127):</strong>
-1,981 EVs with zero chargers, representing a massive suburban-urban
-foothold.</p>
+1,981 EVs with zero chargers, representing a promising suburban and urban expansion opportunity.</p>
 <pre class="r"><code>head(ranked_opportunities,15)</code></pre>
 <pre><code>##    zip_code total_evs total_chargers total_cinemas opportunity_score
 ## 1     94563      3130              0             1         3130.0000
@@ -6960,7 +6959,7 @@ show severe shortfalls. Notably, despite Los Angeles County having one
 of the highest total EV registration counts in the state, no LA zip
 codes appear among the top opportunity scores. This suggests charger
 deployment in LA has scaled roughly in line with demand, making the Bay
-Area’s zero-competition zip codes a comparatively higher-priority target
+Area’s underserved zip codes a comparatively higher-priority target
 for new infrastructure investment.</p>
 </div>
 <div id="strategic-mapping" class="section level2">
@@ -7030,7 +7029,7 @@ pockets.</p>
 <p>While the majority of California cinemas yield a baseline opportunity
 score of approximately 500, the algorithm identified extreme outliers
 concentrated heavily in the Bay Area (San Francisco and the East Bay).
-These locations represent pure, zero-competition monopolies for the
+These locations represent underserved local markets for the
 theaters located within them.</p>
 </div>
 <div id="strategic-recommendations" class="section level2">
@@ -7039,12 +7038,12 @@ theaters located within them.</p>
 immediate site surveys and property management partnership outreach:</p>
 <p>Orinda, East Bay (94563): The highest-value target in the state.
 There are 3,130 registered EVs sharing zero public charging stations.
-The local cinema holds a pure monopoly on EV-driving customers.</p>
+The local cinema serves an underserved market of EV-driving customers.</p>
 <p>San Francisco - Castro (94114): 2,662 registered EVs with zero
 existing public stations in a dense, parking-constrained urban
 environment.</p>
 <p>San Francisco - West Portal (94127): 1,981 EVs with zero chargers,
-representing a massive suburban-urban foothold.</p>
+representing a promising suburban and urban expansion opportunity.</p>
 <p>Secondary strategic initiatives should include localized site
 assessments at these locations to evaluate physical parking lot capacity
 and electrical grid access prior to deployment.</p>
