@@ -17,16 +17,16 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 The objective of this analysis is to identify underserved, high-opportunity markets for Level 2 Electric Vehicle (EV) charging investment in California. While EV adoption continues to scale rapidly—making up over 20% of new global car sales—public charging infrastructure has struggled to keep pace in dense areas.
 
-Commercial movie theaters present a strong opportunity to bridge this gap. Because theaters guarantee a captive audience with a 2-to-3 hour dwell time, they align well with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
+Commercial movie theaters present a strong opportunity to bridge this gap. Because theaters attract customers with a 2-to-3 hour dwell time, they align well with the charging duration required for Level 2 EV stations. This project utilizes an ETL (Extract, Transform, Load) pipeline to aggregate three primary data sources by zip code: California EV registrations, existing alternative fueling stations, and commercial cinema locations.
 
 
 ## Methodology & Data Validation
-Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as a major local cinema in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-value, high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
+Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as a major local cinema in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
 
 
 
 ## Executive Summary
-The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies underserved, high-opportunity markets where early infrastructure investment could reach a high-value, captive audience.
+The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies underserved, high-opportunity markets where early infrastructure investment could reach a high-dwell-time customer base.
 
 
 
@@ -86,7 +86,7 @@ head(ranked_opportunities)
 ```
 
 
-The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest-value targets for immediate infrastructure expansion are:
+The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest priority markets for further site analysis are:
 1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations — the highest-opportunity, lowest-infrastructure market in the dataset.
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood.
 3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
@@ -164,11 +164,11 @@ While the majority of California cinemas yield a baseline opportunity score of a
 ## Strategic Recommendations
 The top three highest-scoring zip codes should be prioritized for immediate site surveys and property management partnership outreach:
 
-Orinda, East Bay (94563): The highest-value target in the state. There are 3,130 registered EVs sharing zero public charging stations, meaning the local cinema would face no competing public charging nearby.
+Orinda, East Bay (94563): The highest-scoring market in this analysis. There are 3,130 registered EVs sharing zero public charging stations, meaning the local cinema would face no competing public charging nearby.
 
 San Francisco - Castro (94114): 2,662 registered EVs with zero existing public stations in a dense, parking-constrained urban environment.
 
-San Francisco - West Portal (94127): 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
+San Francisco - West Portal (94127): 1,981 EVs with zero chargers, representing a promising suburban and urban expansion opportunity.
 
 Secondary strategic initiatives should include localized site assessments at these locations to evaluate physical parking lot capacity and electrical grid access prior to deployment.
 
