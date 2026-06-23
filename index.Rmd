@@ -94,7 +94,7 @@ The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers +
 head(ranked_opportunities,15)
 ```
 ## Analyze
-The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677 with 14 existing public chargers, appear to be well-served relative to local EV demand, while others, particularly in the , show severe shortfalls.
+The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677, with 14 existing public chargers, appear well-served relative to local EV demand, while others, particularly in the Bay Area, show severe shortfalls.
 Notably, despite Los Angeles County having one of the highest total EV registration counts in the state, no LA zip codes appear among the top opportunity scores. This suggests charger deployment in LA has scaled roughly in line with demand, making the Bay Area's low-infrastructure zip codes a comparatively higher-priority target for new infrastructure investment.
 
 
@@ -164,7 +164,7 @@ While the majority of California cinemas yield a baseline opportunity score of a
 ## Strategic Recommendations
 The top three highest-scoring zip codes should be prioritized for immediate site surveys and property management partnership outreach:
 
-Orinda, East Bay (94563): The highest-scoring market in this analysis. There are 3,130 registered EVs sharing zero public charging stations, meaning the local cinema would face no competing public charging nearby.
+Orinda, East Bay (94563): The highest-scoring market in this analysis. There are 3,130 registered EVs sharing zero public charging stations, meaning the local cinema would face no nearby competition from public charging.
 
 San Francisco - Castro (94114): 2,662 registered EVs with zero existing public stations in a dense, parking-constrained urban environment.
 
