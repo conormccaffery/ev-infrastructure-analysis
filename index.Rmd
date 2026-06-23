@@ -7,6 +7,7 @@ output:
     toc: true
     toc_float: true
     code_folding: "hide"
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -27,6 +28,14 @@ Information for the California cinema dataset was sourced from Overpass Turbo. B
 
 ## Executive Summary
 The spatial aggregation of DMV vehicle registrations and alternative fueling data reveals a stark infrastructure gap in California. While EV adoption is highly concentrated in specific zip codes, commercial entertainment venues—specifically cinemas, which offer the ideal 2-to-3 hour customer dwell time for Level 2 charging—are vastly underserved. This analysis identifies underserved, high-opportunity markets where early infrastructure investment could reach a high-dwell-time customer base.
+
+### Top Opportunity Markets
+
+| Zip Code | Location | Total EVs | Existing Chargers | Opportunity Score |
+|:---|:---|:---|:---|:---|
+| 94563 | Orinda | 3,130 | 0 | 3130 |
+| 94114 | Castro | 2,662 | 0 | 2662 |
+| 94127 | West Portal | 1,981 | 0 | 1981 |
 
 
 
@@ -78,6 +87,25 @@ sql_query <- readLines("ev_market_aggregation.sql")
 sql_query <- paste(sql_query, collapse = "\n")
 
 ranked_opportunities <- dbGetQuery(con, sql_query)
+
+#Creating a unique reference table of zip codes and cities from the alternative fuel station data (dataset 1)
+city_lookup <- ca_df %>% 
+  mutate(zip_code = as.character(zip_code)) %>% #Converting zip_code to character so it can join with city names
+  select(`zip_code`,City) %>% 
+  distinct(`zip_code`,.keep_all = TRUE)
+
+#Joining city names into the ranked_opportunities dataframe
+ranked_opportunities <- ranked_opportunities %>% 
+  left_join(city_lookup, by = "zip_code") %>%
+  mutate(City = case_when(
+    zip_code == "94563" ~ "Orinda",
+    zip_code == "94114" ~ "San Francisco",
+    zip_code == "94127" ~ "San Francisco",
+    is.na(City) ~ "Other/Unknown",
+    TRUE ~ City
+  )) %>%
+#Moving city column to the front of the table
+relocate(City, .before = 1)
 dbDisconnect(con)
 ```
 
