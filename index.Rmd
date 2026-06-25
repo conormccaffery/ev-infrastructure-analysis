@@ -162,7 +162,7 @@ Commercial movie theaters present a strong opportunity to bridge this gap. Becau
 
 
 ## Methodology & Data Validation
-Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as a major local cinema in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
+Information for the California cinema dataset was sourced from Overpass Turbo. Because crowd-sourced spatial data often contains anomalies, manual data validation was a critical step in this pipeline. Initial data exploration revealed missing geographic tags for major flagship locations, such as AMC Mercado 20 in Santa Clara. Local market knowledge was applied to impute the missing zip code prior to SQL aggregation, ensuring high-traffic targets were accurately captured in the final model. CSV data containing EV registrations, existing charging stations, and theater coordinates were ingested into a local **SQLite data warehouse**
 
 
 
