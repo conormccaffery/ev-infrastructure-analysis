@@ -111,7 +111,6 @@ cinema_map_data <- cinema_map_data %>% filter(lat >= 32.5 & lat <= 42.0,
 # California Coordinates are positioned approximately between these values above.
 
 # A source for the mapping error before cleaning comes from dataset 2 which tracks vehicle registrations, it might be common for people with California registrations to move to nearby states.
-any(!startsWith(cinema_map_data$zip_code,"9"))
 #California zip codes always start with 9
 cinema_map_data <- cinema_map_data %>% filter(substr(zip_code,start = 1, stop = 1) == "9")
 
@@ -176,7 +175,7 @@ head(ranked_opportunities, 15)
 ```
 
 
-The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest priority markets for further site analysis are:
+The Opportunity Score metric was calculated as 'Total EVs / (Existing Chargers + 1)'. The top three highest priority markets for further site analysis are:
 1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations — the highest-opportunity, lowest-infrastructure market in the dataset.
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood.
 3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
