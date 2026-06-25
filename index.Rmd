@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 | 94114 | Castro | 2,662 | 0 | 2662 |
 | 94127 | West Portal | 1,981 | 0 | 1981 |
 
-```{r data-pipeline, results='hide'}
+```{r data-pipeline, include=FALSE}
 library(dplyr)
 
 #Dataset 1: Alternative Fueling Stations Data 
@@ -41,14 +41,14 @@ ca_df <- select(ca_ev_data,City,State,EV.Network,ZIP,EV.Pricing,Funding.Sources)
 ca_df <- rename(ca_df,zip_code = ZIP)
 ```
 
-```{r}
+```{r, include=FALSE}
 #Dataset 2: 2024 EV Registrations by Zip Code
 ev_zip_data <- read.csv("vehicle-fuel-type-counts-2024.csv")
 ev_zip_data <- select(ev_zip_data,-Date)
 clean_ev_data <- subset(ev_zip_data, Fuel == 'Battery Electric' | Fuel == 'Plug-in Hybrid')
 clean_ev_data <- rename(clean_ev_data,zip_code=ZIP.Code)
 ```
-```{r}
+```{r, include=FALSE}
 # Dataset 3: Points of Interest
 # Preparing to do a join on zip code
 ca_cinemas <- read.delim("california_cinemas.csv",sep = "\t")
@@ -58,7 +58,7 @@ ca_cinemas <- ca_cinemas %>% select(lat,long,zip_code,name) #dropping the amenit
 ca_cinemas <- ca_cinemas %>% mutate(zip_code = ifelse(grepl("Mercado",name, ignore.case = TRUE), "95054", zip_code ))
 ```
 
-```{r}
+```{r, include=FALSE}
 # Database Architecture and SQL Execution
 library(DBI)
 library(RSQLite)
@@ -97,7 +97,8 @@ relocate(City, .before = 1)
 dbDisconnect(con)
 ```
 
-```{r mapping, out.width='100%', echo=TRUE}
+```{r mapping, out.width='100%', echo = FALSE}
+# results = 'hide' is meant to hide validation code on the knitted html page. Before it appeared as a ## [1] TRUE box.
 library(leaflet)
 library(RColorBrewer)
 
@@ -171,7 +172,7 @@ The spatial aggregation of DMV vehicle registrations and alternative fueling dat
 
 
 ```{r}
-head(ranked_opportunities)
+head(ranked_opportunities, 15)
 ```
 
 
@@ -179,9 +180,7 @@ The opportunity Score metric was calculated as 'Total EVs / (Existing Chargers +
 1. **Orinda, East Bay (94563):** 3,130 registered EVs sharing zero public charging stations — the highest-opportunity, lowest-infrastructure market in the dataset.
 2. **San Francisco - Castro (94114):** 2,662 registered EVs with zero existing public stations in a dense, parking-constrained neighborhood.
 3. **San Francisco - West Portal (94127):** 1,981 EVs with zero chargers, representing a massive suburban-urban foothold.
-```{r}
-head(ranked_opportunities,15)
-```
+
 ## Analyze
 The Opportunity Score metric highlights a clear mismatch between EV adoption and charging infrastructure across California. Some zip codes, such as 92677, with 14 existing public chargers, appear well-served relative to local EV demand, while others, particularly in the Bay Area, show severe shortfalls.
 Notably, despite Los Angeles County having one of the highest total EV registration counts in the state, no LA zip codes appear among the top opportunity scores. This suggests charger deployment in LA has scaled roughly in line with demand, making the Bay Area's low-infrastructure zip codes a comparatively higher-priority target for new infrastructure investment.
